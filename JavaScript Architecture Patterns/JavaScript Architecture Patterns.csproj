@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D28DD8B3-0DF2-4BE1-9CA9-5AE7AD22A6D4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JavaScript_Architecture_Patterns</RootNamespace>
+    <AssemblyName>JavaScript Architecture Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Public\style\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="Public\style\bootstrap\css\bootstrap.css.map" />
+    <None Include="Public\style\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Public\style\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Public\style\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Public\style\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.html" />
+    <Content Include="Public\javascript\App.js" />
+    <Content Include="Public\javascript\Events\SoftUni.Constants.Events.js" />
+    <Content Include="Public\javascript\lib\jquery-1.11.3.js" />
+    <Content Include="Public\javascript\lib\pseudo.classical.js" />
+    <Content Include="Public\javascript\model\SoftUni.Employee.Model.js" />
+    <Content Include="Public\javascript\presenter\SoftUni.Employee.Presenter.Abstract.js" />
+    <Content Include="Public\javascript\presenter\SoftUni.Employee.Presenter.Impl.js" />
+    <Content Include="Public\javascript\service\SoftUni.Employee.Service.Abstract.js" />
+    <Content Include="Public\javascript\service\SoftUni.Employee.Service.Impl.js" />
+    <Content Include="Public\javascript\storage\SoftUni.Storage.js" />
+    <Content Include="Public\javascript\storage\SoftUni.Storage.LocalStorage.js" />
+    <Content Include="Public\javascript\view\SoftUni.Employee.View.js" />
+    <Content Include="Public\style\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Public\style\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Public\style\bootstrap\css\bootstrap.css" />
+    <Content Include="Public\style\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Public\style\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Public\style\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\style\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Public\style\bootstrap\js\npm.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
